@@ -46,7 +46,9 @@ export class ChatService{
 
     sendMessage(data)
     {
-        this.socket.emit('message',data);
+        if (data.message) {
+            this.socket.emit('message', data);
+        }
     }
 
     newMessageReceived(){
