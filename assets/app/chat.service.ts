@@ -10,7 +10,7 @@ import {Observable} from 'rxjs/Observable';
 
 export class ChatService{
 
-    private socket = io('http://localhost:3000');
+    private socket = io('https://whatsappchattask.herokuapp.com/');
 
     joinRoom(data)
     {
